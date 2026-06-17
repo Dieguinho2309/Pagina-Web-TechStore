@@ -35,6 +35,13 @@ p{
     color: transparent; 
     
 }
+.badge{
+    background-color: #3b82f6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+
+}
 .nav-links{
     display: flex;
     list-style: none;
@@ -73,9 +80,8 @@ p{
     align-items: center;
     padding: 50px;
     gap: 40px;
-    width: 100vh;
-    height: 100vh;
-    background: linear-gradient(135deg, #e0f2fe 0%, #ede9fe 50%, #fce7f3 100%);
+    width: 100%;
+    background: linear-gradient(135deg, #e0f2fe 0%, #ede9fe 50%, #fce7f3 100%); 
     min-height: 100vh;
     width: 100%;
 }
@@ -119,6 +125,7 @@ p{
 .card:hover{
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
 .hero-buttons{
     display: flex;
@@ -132,17 +139,72 @@ p{
     color:#fff;
     border: none;
     font-weight: 600;
-    margin-left: 20px;
+    transition: background-color 0.3s ease;
+    gap: 20px;
 }
 .buttons:nth-child(1){
     background-color: #3088E3;
 }
 .buttons:nth-child(1):hover{
     background-color: #236EBA;
+    cursor: pointer;
 }
 .buttons:nth-child(2){
     background-color: #A4AAB0;
 }
 .buttons:nth-child(2):hover{
     background-color: #7A8086;
+    cursor: pointer;
+}
+
+.category-section{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #f9fafb;
+    
+}
+.categories{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category-section h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.category-section p{
+    font-size: 22px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 50px;
+}
+.category-card{
+    flex: 0 0 200px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #eceef0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;    
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.icon-wrapper{
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-card:nth-child(1) .icon-wrapper{
+    background-color: #89abe3;
+}
+.category-card:nth-child(1) .icon-wrapper i{
+    color: #000;
 }
